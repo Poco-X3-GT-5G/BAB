@@ -12,6 +12,6 @@ def A1():
     fbpn = "FBPN/com.facebook.katana"
     fbdv = "FBDV/"+model2
     fbsv = "FBSV/10"
-    fbca = "FBOP/1;FBCA/armeabi-v7a:armeabi;]"
-    ua = f"{a}{fban};{fbav};{fbbv};{fbdm};{fblc};{fbcr};{fbmf};{fbbd};{fbpn};{fbdv};{fbsv};{fbca}"
+    fbca = "FBOP/19;FBCA/armeabi-v7a:armeabi;]"
+    ua = f"{fban};{fbav};{fbbv};{fbdm};{fblc};{fbcr};{fbmf};{fbbd};{fbpn};{fbdv};{fbsv};{fbca}"
     return ua
