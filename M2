@@ -1,35 +1,35 @@
 def A1():
-    model2 = random.choice(["Mi 6","Mi Max 2","Redmi Note 5A Prime","Redmi Note 5A","Redmi Y1 Lite"])
+    model2 = random.choice(["SM-S711B","SM-M346B","SM-A245F","SM-M146B","SM-M546B"])
     a = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(10,13)}; {model2} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
     fban = "[FBAN/FB4A"
-    fbav = "FBAV/"+str(random.randint(40,320))+'.0.0.'+str(random.randrange(10,98))+"."+str(random.randint(11,229))
+    fbav = "FBAV/"+str(random.randint(259,399))+'.0.0.'+str(random.randrange(56,98))+"."+str(random.randint(22,229))
     fbbv = "FBBV/"+str(random.randint(222222222,888888888))
-    fbdm = "FBDM/{density=2.0,width=720,height=1280}"
-    fblc = "FBLC/en_GB"#+random.choice(["en_US","en_GB"])
-    fbcr = "FBCR/T-Mobile"#+random.choice(["Verizon Wireless","T-Mobile","Verizon","Vodafone","TELCEL","Airtel","Sprint","AT&-T","null","U.S. Cellular","Nepal Telecom"])
-    fbmf = "FBMF/Xiaomi"
-    fbbd = "FBBD/Xiaomi"
+    fbdm = "FBDM/{density=3.0,width=1080,height=2340}"
+    fblc = "FBLC/en_GB"
+    fbcr = "FBCR/Airtel"
+    fbmf = "FBMF/samsung"
+    fbbd = "FBBD/samsung"
     fbpn = "FBPN/com.facebook.katana"
     fbdv = "FBDV/"+model2
-    fbsv = "FBSV/7.1.1"
-    fbca = "FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+    fbsv = "FBSV/13"
+    fbca = "FBOP/19;FBCA/arm64-v8a:null;]"
     ua = f"{a}{fban};{fbav};{fbbv};{fbdm};{fblc};{fbcr};{fbmf};{fbbd};{fbpn};{fbdv};{fbsv};{fbca}"
     return ua
 
 def A2():
-    model2 = random.choice(["Mi 6","Mi Max 2","Redmi Note 5A Prime","Redmi Note 5A","Redmi Y1 Lite"])
+    model2 = random.choice(["SM-S711B","SM-M346B","SM-A245F","SM-M146B","SM-M546B"])
     a = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(10,13)}; {model2} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
     fban = "[FBAN/FB4A"
-    fbav = "FBAV/"+str(random.randint(40,320))+'.0.0.'+str(random.randrange(10,98))+"."+str(random.randint(11,229))
+    fbav = "FBAV/"+str(random.randint(259,399))+'.0.0.'+str(random.randrange(56,98))+"."+str(random.randint(22,229))
     fbbv = "FBBV/"+str(random.randint(222222222,888888888))
-    fbdm = "FBDM/{density=2.0,width=720,height=1280}"
-    fblc = "FBLC/en_GB"#+random.choice(["en_US","en_GB"])
-    fbcr = "FBCR/T-Mobile"#+random.choice(["Verizon Wireless","T-Mobile","Verizon","Vodafone","TELCEL","Airtel","Sprint","AT&-T","null","U.S. Cellular","Nepal Telecom"])
-    fbmf = "FBMF/Xiaomi"
-    fbbd = "FBBD/Xiaomi"
+    fbdm = "FBDM/{density=3.0,width=1080,height=2340}"
+    fblc = "FBLC/en_GB"
+    fbcr = "FBCR/Airtel"
+    fbmf = "FBMF/samsung"
+    fbbd = "FBBD/samsung"
     fbpn = "FBPN/com.facebook.katana"
     fbdv = "FBDV/"+model2
-    fbsv = "FBSV/7.1.1"
-    fbca = "FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+    fbsv = "FBSV/13"
+    fbca = "FBOP/19;FBCA/arm64-v8a:null;]"
     ua = f"{a}{fban};{fbav};{fbbv};{fbdm};{fblc};{fbcr};{fbmf};{fbbd};{fbpn};{fbdv};{fbsv};{fbca}"
     return ua
