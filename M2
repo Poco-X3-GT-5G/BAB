@@ -1,35 +1,39 @@
 def A1():
-    model2 = random.choice(["SM-S711B","SM-M346B","SM-A245F","SM-M146B","SM-M546B"])
-    a = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(10,13)}; {model2} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
-    fban = "[FBAN/FB4A"
-    fbav = "FBAV/"+str(random.randint(259,399))+'.0.0.'+str(random.randrange(56,98))+"."+str(random.randint(22,229))
-    fbbv = "FBBV/"+str(random.randint(222222222,888888888))
-    fbdm = "FBDM/{density=3.0,width=1080,height=2340}"
-    fblc = "FBLC/en_GB"
-    fbcr = "FBCR/Airtel"
-    fbmf = "FBMF/samsung"
-    fbbd = "FBBD/samsung"
-    fbpn = "FBPN/com.facebook.katana"
+    version = str(random.randint(6,13))
+    model2 = random.choice(["SM-A600FN","SM-G950U","SM-G780G","SM-A715F","SM-A137F","SM-A105FN","SM-J415F","SM-G970F"])
+    a = f'Dalvik/2.1.0 (Linux; U; Android {version}; {model2} Build/PPR1.{random.randint(111111,999999)}.{random.randint(111,999)}) '
+    fban = "[FBAN/Orca-Android"
+    fbav = "FBAV/196.0.0."+str(random.randint(51,76))
+    fbpn = "FBPN/com.facebook.orca"
+    fblc = "FBLC/"+random.choice(["en_US","en_GB"])
+    fbbv = "FBBV/"+str(random.randint(111111111,888888888))
+    fbcr = "FBCR/null"
+    fbmf = "FBMF/Samsung"
+    fbbd = "FBBD/Samsung"
     fbdv = "FBDV/"+model2
-    fbsv = "FBSV/13"
-    fbca = "FBOP/19;FBCA/arm64-v8a:null;]"
-    ua = f"{a}{fban};{fbav};{fbbv};{fbdm};{fblc};{fbcr};{fbmf};{fbbd};{fbpn};{fbdv};{fbsv};{fbca}"
+    fbsv = "FBSV/"+version
+    fbca = "FBCA/arm64-v8a:null"
+    fbdm = "FBDM/{density=2.0,width=1080,height=2340}"
+    fb_fw = "FB_FW/1;]"
+    ua = f"{a}{fban};{fbav};{fbpn};{fblc};{fbbv};{fbcr};{fbmf};{fbbd};{fbdv};{fbsv};{fbca};{fbdm};{fb_fw}"
     return ua
 
 def A2():
-    model2 = random.choice(["SM-S711B","SM-M346B","SM-A245F","SM-M146B","SM-M546B"])
-    a = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(10,13)}; {model2} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
-    fban = "[FBAN/FB4A"
-    fbav = "FBAV/"+str(random.randint(259,399))+'.0.0.'+str(random.randrange(56,98))+"."+str(random.randint(22,229))
-    fbbv = "FBBV/"+str(random.randint(222222222,888888888))
-    fbdm = "FBDM/{density=3.0,width=1080,height=2340}"
-    fblc = "FBLC/en_GB"
-    fbcr = "FBCR/Airtel"
-    fbmf = "FBMF/samsung"
-    fbbd = "FBBD/samsung"
-    fbpn = "FBPN/com.facebook.katana"
+    version = str(random.randint(6,13))
+    model2 = random.choice(["SM-A600FN","SM-G950U","SM-G780G","SM-A715F","SM-A137F","SM-A105FN","SM-J415F","SM-G970F"])
+    a = f'Dalvik/2.1.0 (Linux; U; Android {version}; {model2} Build/PPR1.{random.randint(111111,999999)}.{random.randint(111,999)}) '
+    fban = "[FBAN/Orca-Android"
+    fbav = "FBAV/196.0.0."+str(random.randint(51,76))
+    fbpn = "FBPN/com.facebook.orca"
+    fblc = "FBLC/"+random.choice(["en_US","en_GB"])
+    fbbv = "FBBV/"+str(random.randint(111111111,888888888))
+    fbcr = "FBCR/null"
+    fbmf = "FBMF/Samsung"
+    fbbd = "FBBD/Samsung"
     fbdv = "FBDV/"+model2
-    fbsv = "FBSV/13"
-    fbca = "FBOP/19;FBCA/arm64-v8a:null;]"
-    ua = f"{a}{fban};{fbav};{fbbv};{fbdm};{fblc};{fbcr};{fbmf};{fbbd};{fbpn};{fbdv};{fbsv};{fbca}"
+    fbsv = "FBSV/"+version
+    fbca = "FBCA/arm64-v8a:null"
+    fbdm = "FBDM/{density=2.0,width=1080,height=2340}"
+    fb_fw = "FB_FW/1;]"
+    ua = f"{a}{fban};{fbav};{fbpn};{fblc};{fbbv};{fbcr};{fbmf};{fbbd};{fbdv};{fbsv};{fbca};{fbdm};{fb_fw}"
     return ua
