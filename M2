@@ -1,39 +1,15 @@
 def A1():
-    version = str(random.randint(6,13))
+    version = str(random.randint(6,14))
     model2 = random.choice(["SM-A600FN","SM-G950U","SM-G780G","SM-A715F","SM-A137F","SM-A105FN","SM-J415F","SM-G970F"])
-    a = f'Dalvik/2.1.0 (Linux; U; Android {version}; {model2} Build/PPR1.{random.randint(111111,999999)}.{random.randint(111,999)}) '
-    fban = "[FBAN/Orca-Android"
-    fbav = "FBAV/196.0.0."+str(random.randint(51,76))
-    fbpn = "FBPN/com.facebook.orca"
-    fblc = "FBLC/"+random.choice(["en_US","en_GB"])
-    fbbv = "FBBV/"+str(random.randint(111111111,888888888))
-    fbcr = "FBCR/null"
-    fbmf = "FBMF/Samsung"
-    fbbd = "FBBD/Samsung"
-    fbdv = "FBDV/"+model2
-    fbsv = "FBSV/"+version
-    fbca = "FBCA/arm64-v8a:null"
-    fbdm = "FBDM/{density=2.0,width=1080,height=2340}"
-    fb_fw = "FB_FW/1;]"
-    ua = f"{a}{fban};{fbav};{fbpn};{fblc};{fbbv};{fbcr};{fbmf};{fbbd};{fbdv};{fbsv};{fbca};{fbdm};{fb_fw}"
+    a = f'Dalvik/2.1.0 (Linux; U; Android {version}; {model2} Build/PPR1.{random.randint(111111,999999)}.{random.randint(111,999)})'+"[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77))
+    b = ";[FBAN/FB4A;FBAV/50.0.0.58.91;FBBV/20825386;FBDM/{density=2.5,width=1440,height=2560};FBLC/fr_KM;FBCR/Sprocket Wireless;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G928F;FBSV/5.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
     return ua
 
 def A2():
-    version = str(random.randint(6,13))
+    version = str(random.randint(6,14))
     model2 = random.choice(["SM-A600FN","SM-G950U","SM-G780G","SM-A715F","SM-A137F","SM-A105FN","SM-J415F","SM-G970F"])
-    a = f'Dalvik/2.1.0 (Linux; U; Android {version}; {model2} Build/PPR1.{random.randint(111111,999999)}.{random.randint(111,999)}) '
-    fban = "[FBAN/Orca-Android"
-    fbav = "FBAV/196.0.0."+str(random.randint(51,76))
-    fbpn = "FBPN/com.facebook.orca"
-    fblc = "FBLC/"+random.choice(["en_US","en_GB"])
-    fbbv = "FBBV/"+str(random.randint(111111111,888888888))
-    fbcr = "FBCR/null"
-    fbmf = "FBMF/Samsung"
-    fbbd = "FBBD/Samsung"
-    fbdv = "FBDV/"+model2
-    fbsv = "FBSV/"+version
-    fbca = "FBCA/arm64-v8a:null"
-    fbdm = "FBDM/{density=2.0,width=1080,height=2340}"
-    fb_fw = "FB_FW/1;]"
-    ua = f"{a}{fban};{fbav};{fbpn};{fblc};{fbbv};{fbcr};{fbmf};{fbbd};{fbdv};{fbsv};{fbca};{fbdm};{fb_fw}"
+    a = f'Dalvik/2.1.0 (Linux; U; Android {version}; {model2} Build/PPR1.{random.randint(111111,999999)}.{random.randint(111,999)})'+"[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77))
+    b = ";[FBAN/FB4A;FBAV/50.0.0.58.91;FBBV/20825386;FBDM/{density=2.5,width=1440,height=2560};FBLC/fr_KM;FBCR/Sprocket Wireless;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G928F;FBSV/5.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
     return ua
