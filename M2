@@ -1,39 +1,20 @@
 def A1():
-    version = str(random.randint(6,13))
-    model2 = random.choice(["Mi 5s","Redmi 4A","Redmi Note 4","Mi Note 2","Redmi 4X"])
-    a = f'Dalvik/2.1.0 (Linux; U; Android {version}; {model2} Build/PPR1.{random.randint(111111,999999)}.{random.randint(111,999)}) '
-    fban = "[FBAN/Orca-Android"
-    fbav = "FBAV/196.0.0."+str(random.randint(51,76))
-    fbpn = "FBPN/com.facebook.orca"
-    fblc = "FBLC/"+random.choice(["en_US","en_GB"])
-    fbbv = "FBBV/"+str(random.randint(111111111,888888888))
-    fbcr = "FBCR/null"
-    fbmf = "FBMF/Xiaomi"
-    fbbd = "FBBD/Xiaomi"
-    fbdv = "FBDV/"+model2
-    fbsv = "FBSV/"+version
-    fbca = "FBCA/arm64-v8a:null"
-    fbdm = "FBDM/{density=2.0,width=1080,height=2340}"
-    fb_fw = "FB_FW/1;]"
-    ua = f"{a}{fban};{fbav};{fbpn};{fblc};{fbbv};{fbcr};{fbmf};{fbbd};{fbdv};{fbsv};{fbca};{fbdm};{fb_fw}"
+    a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
+    b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    c = "[FBAN/FB4A;FBAV/196.0.0.30;FBBV/342470436;FBDM/{density=2.0,width=1080,height=1280};FBLC/en_LC;FBRV/909109814;FBCR/Red Pocket Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/GT-I9515;FBSV/5.0.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = b+c
     return ua
 
 def A2():
-    version = str(random.randint(6,13))
-    model2 = random.choice(["Mi 5s","Redmi 4A","Redmi Note 4","Mi Note 2","Redmi 4X"])
-    a = f'Dalvik/2.1.0 (Linux; U; Android {version}; {model2} Build/PPR1.{random.randint(111111,999999)}.{random.randint(111,999)}) '
-    fban = "[FBAN/Orca-Android"
-    fbav = "FBAV/196.0.0."+str(random.randint(51,76))
-    fbpn = "FBPN/com.facebook.orca"
-    fblc = "FBLC/"+random.choice(["en_US","en_GB"])
-    fbbv = "FBBV/"+str(random.randint(111111111,888888888))
-    fbcr = "FBCR/null"
-    fbmf = "FBMF/Xiaomi"
-    fbbd = "FBBD/Xiaomi"
-    fbdv = "FBDV/"+model2
-    fbsv = "FBSV/"+version
-    fbca = "FBCA/arm64-v8a:null"
-    fbdm = "FBDM/{density=2.0,width=1080,height=2340}"
-    fb_fw = "FB_FW/1;]"
-    ua = f"{a}{fban};{fbav};{fbpn};{fblc};{fbbv};{fbcr};{fbmf};{fbbd};{fbdv};{fbsv};{fbca};{fbdm};{fb_fw}"
+    a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
+    b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    c = "[FBAN/FB4A;FBAV/196.0.0.30;FBBV/342470436;FBDM/{density=2.0,width=1080,height=1280};FBLC/en_LC;FBRV/909109814;FBCR/Red Pocket Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/GT-I9515;FBSV/5.0.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b+c
+    return ua
+
+def A3():
+    a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
+    b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    c = "[FBAN/FB4A;FBAV/196.0.0.64;FBBV/876006497;FBDM/{density=2.0,width=1080,height=1080};FBLC/kn;FBRV/275685127;FBCR/Basic PCS;FBMF/SAMSUNG;FBBD/SAMSUNG;FBPN/com.facebook.katana;FBDV/SAMSUNG SM-G996U1;FBSV/11;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = b+c
     return ua
