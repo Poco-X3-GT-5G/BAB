@@ -1,20 +1,20 @@
 def A1():
     a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
     b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    c = "[FBAN/FB4A;FBAV/196.0.0.30;FBBV/342470436;FBDM/{density=2.0,width=1080,height=1280};FBLC/en_LC;FBRV/909109814;FBCR/Red Pocket Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/GT-I9515;FBSV/5.0.1;nullFBCA/armeabi-v7a:armeabi;]"
+    c = ";[FBAN/FB4A;FBAV/196.0.0.43;FBBV/382394328;FBDM/{density=1.5,width=1280,height=1080};FBLC/vi_VN;FBRV/559050027;FBCR/OTG Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-J337AZ;FBSV/8.0.0;nullFBCA/armeabi-v7a:armeabi;]"
     ua = b+c
     return ua
 
 def A2():
     a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
     b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    c = "[FBAN/FB4A;FBAV/196.0.0.30;FBBV/342470436;FBDM/{density=2.0,width=1080,height=1280};FBLC/en_LC;FBRV/909109814;FBCR/Red Pocket Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/GT-I9515;FBSV/5.0.1;nullFBCA/armeabi-v7a:armeabi;]"
+    c = ";[FBAN/FB4A;FBAV/196.0.0.43;FBBV/382394328;FBDM/{density=1.5,width=1280,height=1080};FBLC/vi_VN;FBRV/559050027;FBCR/OTG Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-J337AZ;FBSV/8.0.0;nullFBCA/armeabi-v7a:armeabi;]"
     ua = a+b+c
     return ua
 
 def A3():
     a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
     b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    c = "[FBAN/FB4A;FBAV/196.0.0.64;FBBV/876006497;FBDM/{density=2.0,width=1080,height=1080};FBLC/kn;FBRV/275685127;FBCR/Basic PCS;FBMF/SAMSUNG;FBBD/SAMSUNG;FBPN/com.facebook.katana;FBDV/SAMSUNG SM-G996U1;FBSV/11;nullFBCA/armeabi-v7a:armeabi;]"
+    c = ";[FBAN/FB4A;FBAV/196.0.0.43;FBBV/382394328;FBDM/{density=1.5,width=1280,height=1080};FBLC/vi_VN;FBRV/559050027;FBCR/OTG Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-J337AZ;FBSV/8.0.0;nullFBCA/armeabi-v7a:armeabi;]"
     ua = b+c
     return ua
