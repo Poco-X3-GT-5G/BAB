@@ -1,4 +1,6 @@
 loc1 = "pt_BR"
 code1 = "BR"
-loc2 = "pt_BR"
-code2 = "BR"
+loc2 = "en_US"
+code2 = "US"
+loc3 = "en_US"
+code3 = "US"
