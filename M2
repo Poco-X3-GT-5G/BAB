@@ -1,20 +1,3 @@
-def A1():
-    a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
-    b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    c = ";[FBAN/FB4A;FBAV/196.0.0.42;FBBV/297465138;FBDM/{density=2.0,width=1080,height=1280};FBLC/en_BE;FBRV/215898149;FBCR/Fast Track Communications;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/Samsung Galaxy S24;FBSV/14;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b+c
-    return ua
-
-def A2():
-    a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
-    b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    c = ";[FBAN/FB4A;FBAV/196.0.0.42;FBBV/297465138;FBDM/{density=2.0,width=1080,height=1280};FBLC/en_BE;FBRV/215898149;FBCR/Fast Track Communications;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/Samsung Galaxy S24;FBSV/14;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b+c
-    return ua
-
-def A3():
-    a = 'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))'
-    b = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    c = ";[FBAN/FB4A;FBAV/196.0.0.42;FBBV/297465138;FBDM/{density=2.0,width=1080,height=1280};FBLC/en_BE;FBRV/215898149;FBCR/Fast Track Communications;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/Samsung Galaxy S24;FBSV/14;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b+c
-    return ua
+def X1():
+    g = "[FBAN/FB4A;FBAV/196.0.0.74;FBBV/836618056;FBDM/{density=3.0,width=1080,height=2168};FBLC/bg_BG;FBRV/825215907;FBCR/Maxcom;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A510Y;FBSV/6.2.3;nullFBCA/armeabi-v7a:armeabi;]"
+    return "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";"+g
