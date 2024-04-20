@@ -1,5 +1,5 @@
 def X1():
     a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,312)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/310.0.0.50.118;FBBV/282018877;FBDM/{density=3.0,width=2220,height=1080};FBLC/fr_CA;FBCR/Bell;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530F;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    b = ";[FBAN/FB4A;FBAV/310.0.0.50.118;FBBV/282018877;FBDM/{density=1.5,width=720,height=1244};FBLC/en_US;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G3518;FBSV/4.4.2;nullFBCA/armeabi-v7a:armeabi;]"
     ua = a+b
     return ua
