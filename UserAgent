@@ -1,5 +1,6 @@
 def X1():
+    dal = f"Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))"
     a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,312)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/269.0.0.50.127;FBBV/212782999;FBDM/{density=1.75,width=720,height=1504};FBLC/sv_SE;FBRV/209699291;FBCR/Telenor;FBMF/motorola;FBBD/motorola;FBPN/com.facebook.katana;FBDV/moto g go;FBSV/11;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
+    b = ";[FBAN/FB4A;FBAV/196.0.0.81;FBBV/111450058;FBDM/{density=1.75,width=720,height=1504};FBLC/en_US;FBRV/358518450;FBCR/vodafone.de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A325F;FBSV/7.2.3;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+    ua = dal+a+b
     return ua
