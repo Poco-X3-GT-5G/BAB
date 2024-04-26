@@ -1,5 +1,5 @@
 def X1():
-    Models = (["M5c","SM-G570M/DS","Redmi 4X","Vivo V5s","SM-J327P","LG X Power"])
+    Models = random.choice(["M5c","SM-G570M/DS","Redmi 4X","Vivo V5s","SM-J327P","LG X Power"])
     fban = "[FBAN/FB4A"
     fbav = "FBAV/"+str(random.randint(111,399))+'.0.0.29.109'
     fbbv = "FBBV/58682818;"
