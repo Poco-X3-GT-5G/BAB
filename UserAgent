@@ -1,6 +1,13 @@
 def X1():
-    dal = f"Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))"
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,312)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/267.1.0.46.120;FBBV/210653367;FBDM/{density=3.0,width=1080,height=1920};FBLC/pt_BR;FBRV/207881145;FBCR/null;FBMF/Xiaomi;FBBD/Redmi;FBPN/com.facebook.katana;FBDV/Note 10S;FBSV/11;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
-    ua = dal+a+b
+    Models = (["M5c","SM-G570M/DS","Redmi 4X","Vivo V5s","SM-J327P","LG X Power"])
+    fban = "[FBAN/FB4A"
+    fbav = "FBAV/"+str(random.randint(111,399))+'.0.0.29.109'
+    fbbv = "FBBV/58682818;"
+    fblc = "FBLC/en_GB"
+    fbcr = "FBCR/null"
+    fbnp = "FBNP/com.facebook.katana"
+    fbdv = "FBDV/"+Models
+    fbsv = "FBSV/6.0.1"
+    fbdm = "FBDM/{density=2.0,width=720,height=1280};]" 
+    ua = f"{fban};{fbav};{fbbv};{fblc};{fbcr};{fbnp};{fbdv};{fbsv};{fbdm}"
     return ua
