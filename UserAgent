@@ -1,49 +1,56 @@
 def X1():
-    dal = "Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))"
+    dal = random.choice(model2)
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/bn_BD;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    a = " [FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/461.0.0.47.85;FBBV/451215909;FBDM/{density=3.0,width=1080,height=2460};FBLC/en_US;FBRV/451215909;FBCR/"+network+";FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/22041216UC;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]"
     ua = dal+a+b
     return ua
 def X2():
+    dal = random.choice(model2)
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/bn_BD;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
+    a = " [FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/461.0.0.47.85;FBBV/451215909;FBDM/{density=3.0,width=1080,height=2199};FBLC/bn_BD;FBRV/451215909;FBCR/"+network+";FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/22041216UC;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]"
+    ua = dal+a+b
     return ua
 def X3():
+    dal = random.choice(model2)
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/ne_NP;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
+    a = " [FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/461.0.0.47.85;FBBV/451215909;FBDM/{density=3.0,width=1080,height=2199};FBLC/ne_NP;FBRV/451215909;FBCR/"+network+";FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/22041216UC;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]"
+    ua = dal+a+b
     return ua
 def X4():
+    dal = random.choice(model2)
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/hi_IN;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
+    a = " [FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/461.0.0.47.85;FBBV/451215909;FBDM/{density=3.0,width=1080,height=2199};FBLC/hi_IN;FBRV/451215909;FBCR/"+network+";FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/22041216UC;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]"
+    ua = dal+a+b
     return ua
 def X5():
+    dal = random.choice(model2)
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/ar_DZ;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
+    a = " [FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/461.0.0.47.85;FBBV/451215909;FBDM/{density=3.0,width=1080,height=2199};FBLC/ar_DZ;FBRV/451215909;FBCR/"+network+";FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/22041216UC;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]"
+    ua = dal+a+b
     return ua
 def X6():
+    dal = random.choice(model2)
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/my_MM;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
+    a = " [FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/461.0.0.47.85;FBBV/451215909;FBDM/{density=3.0,width=1080,height=2199};FBLC/my_MM;FBRV/451215909;FBCR/"+network+";FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/22041216UC;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]"
+    ua = dal+a+b
     return ua
 def X7():
+    dal = random.choice(model2)
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/id_ID;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
+    a = " [FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/461.0.0.47.85;FBBV/451215909;FBDM/{density=3.0,width=1080,height=2199};FBLC/id_ID;FBRV/451215909;FBCR/"+network+";FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/22041216UC;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]"
+    ua = dal+a+b
     return ua
 def X8():
+    dal = random.choice(model2)
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/en_GB;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
+    a = " [FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/461.0.0.47.85;FBBV/451215909;FBDM/{density=3.0,width=1080,height=2199};FBLC/en_GB;FBRV/451215909;FBCR/"+network+";FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/22041216UC;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]"
+    ua = dal+a+b
     return ua
