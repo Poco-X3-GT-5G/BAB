@@ -1,3 +1,48 @@
 def X1():
-    g = "[FBAN/FB4A;FBAV/60.0.0.16.76;FBBV/20454026;FBDM/{density=2.0,width=720,height=1590};FBLC/en_US;FBCR/AT&-T;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A022M;FBSV/11;nullFBCA/armeabi-v7a:armeabi;]"
-    return "[FBAN/FB4A;FBAV/"+str(random.randint(111,777))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,777)) +";FBBV/"+str(random.randint(11111111,77777777))+";"+g
+    network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/en_US;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
+    return ua
+def X2():
+    network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/bn_BD;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
+    return ua
+def X3():
+    network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/ne_NP;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
+    return ua
+def X4():
+    network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/hi_IN;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
+    return ua
+def X5():
+    network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/ar_DZ;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
+    return ua
+def X6():
+    network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/my_MM;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
+    return ua
+def X7():
+    network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/id_ID;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
+    return ua
+def X8():
+    network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
+    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/en_GB;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
+    ua = a+b
+    return ua
