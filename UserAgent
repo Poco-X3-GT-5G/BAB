@@ -2,7 +2,7 @@ def X1():
     dal = "Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))"
     network = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
     a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/196.0.0.47;FBBV/708257995;FBDM/{density=2.625,width=1080,height=2201};FBLC/bg_BG;FBRV/771916259;FBCR/Verizon Wireless;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH2081;FBSV/10.2.3;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+    b = ";[FBAN/FB4A;FBAV/196.0.0.72;FBBV/558675459;FBDM/{density=3.0,width=1080,height=2199};FBLC/bn_BD;FBRV/279681089;FBCR/"+network+";FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A530N;FBSV/7.1.1;nullFBCA/armeabi-v7a:armeabi;]"
     ua = dal+a+b
     return ua
 def X2():
