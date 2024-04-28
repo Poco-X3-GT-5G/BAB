@@ -1,20 +1,15 @@
 def X1():
     a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/451410611;FBDM/{density=2.0,width=720,height=1600};FBLC/en_US;FBRV/451410611;FBCR/AT&T and T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-F127G;FBSV/11;FBOP/19;FBCA/arm64-v8a:null;]"
+    b = ";[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/451410611;FBDM/{density=2.0,width=720,height=1260};FBLC/en_US;FBRV/451410611;FBCR/AT&T and T-Mobile;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO BF6;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
     ua = a+b
     return ua
 def X2():
     a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/451410611;FBDM/{density=2.0,width=720,height=1600};FBLC/en_US;FBRV/451410611;FBCR/AT&T and T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-F127G;FBSV/11;FBOP/19;FBCA/arm64-v8a:null;]"
+    b = ";[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/451410611;FBDM/{density=2.0,width=720,height=1260};FBLC/en_US;FBRV/451410611;FBCR/AT&T and T-Mobile;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO BF6;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
     ua = a+b
     return ua
 def X3():
     a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/451410611;FBDM/{density=2.0,width=720,height=1600};FBLC/en_US;FBRV/451410611;FBCR/AT&T and T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-F127G;FBSV/11;FBOP/19;FBCA/arm64-v8a:null;]"
-    ua = a+b
-    return ua
-def X4():
-    a = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+".0.0."+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
-    b = ";[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/451410611;FBDM/{density=2.0,width=720,height=1600};FBLC/en_US;FBRV/451410611;FBCR/AT&T and T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-F127G;FBSV/11;FBOP/19;FBCA/arm64-v8a:null;]"
+    b = ";[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/451410611;FBDM/{density=2.0,width=720,height=1260};FBLC/en_US;FBRV/451410611;FBCR/AT&T and T-Mobile;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO BF6;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
     ua = a+b
     return ua
