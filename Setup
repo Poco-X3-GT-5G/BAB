@@ -1,2 +1,2 @@
 def Paid():
-    paid = Key()
+    paid = Free()
