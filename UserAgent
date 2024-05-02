@@ -1,1 +1,16 @@
-
+def X1():
+    build = random.choice(["QP1A","RP1A","TP1A","UP1A"])
+    version = random.randrange(11,13)
+    en = random.choice(["en_US","en_GB","pt_BR","en_QA","pt_PT","ru_RU","it_IT"])
+    a = "Dalvik/2.1.0 (Linux; U; Android "+str(version)+"; RMX3491 Build/"+str(build)+"."+str(random.randrange(111111,999999))+"."+str(random.randrange(111,999))+") "
+    b = "[FBAN/Orca-Android;FBAV/196.0.0.76;FBPN/com.facebook.orca;FBLC/"+str(en)+";FBBV/814862707;FBCR/null;FBMF/Realme;FBBD/Realme;FBDV/RMX3491;FBSV/"+str(version)+";FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=2168};FB_FW/1;FBRV/579575338]"
+    ua = a+b
+    return ua
+def X2():
+    build = random.choice(["QP1A","RP1A","TP1A","UP1A"])
+    version = random.randrange(11,13)
+    en = random.choice(["en_US","en_GB","pt_BR","en_QA","pt_PT","ru_RU","it_IT"])
+    a = "Dalvik/2.1.0 (Linux; U; Android "+str(version)+"; RMX3491 Build/"+str(build)+"."+str(random.randrange(111111,999999))+"."+str(random.randrange(111,999))+") "
+    b = "[FBAN/Orca-Android;FBAV/196.0.0.76;FBPN/com.facebook.orca;FBLC/"+str(en)+";FBBV/814862707;FBCR/null;FBMF/Realme;FBBD/Realme;FBDV/RMX3491;FBSV/"+str(version)+";FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=2168};FB_FW/1;FBRV/579575338]"
+    ua = a+b
+    return ua
