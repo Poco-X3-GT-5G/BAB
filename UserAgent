@@ -1,8 +1,1 @@
-def X1():
-    model = random.choice(["SM-A356B","SM-A202F","SM-A356E","SM-G960F","SM-A3560","SM-G9350","SM-A356E","SM-E546B","SM-A3560","SM-A528B"])
-    version = random.randrange(5,14)
-    build = random.choice(["QP1A","RP1A","TP1A","UP1A"])
-    a = "Dalvik/2.1.0 (Linux; U; Android "+str(version)+"; "+str(model)+" Build/"+str(build)+"."+str(random.randrange(111111,999999))+"."+str(random.randrange(111,999))+") "
-    b = "[FBAN/FB4A;FBAV/196.0.0."+str(random.randint(11,79))+";FBBV/"+str(random.randint(111133334,777788889))+";FBDM/{density=2.0,width=720,height=1519};FBLC/cy_GB;FBRV/"+str(random.randint(111133334,777788889))+";FBCR/EE;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/"+str(model)+";FBSV/"+str(version)+";nullFBCA/armeabi-v7a:armeabi;]"
-    ua = a+b
-    return ua
+
