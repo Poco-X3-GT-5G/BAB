@@ -1,3 +1,5 @@
 def X1():
-    ua = "[FBAN/FB4A;FBAV/"+str(random.randint(410,462))+".0.0.47.85;FBBV/4514"+str(random.randint(11111,99999))+";FBDM/{density=2.0,width=720,height=1280};FBLC/zh_CN;FBRV/4514"+str(random.randint(11111,99999))+";FBCR/Telecom;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.orca;FBDV/MMB29K;FBSV/7.0.0;FBOP/1;FBCA/armeabi-v7a:armeabi;FB_FW/1;]"
+    a  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))
+    b= ";[FBAN/Orca-Android;FBAV/231.0.0.25.121;FBPN/com.facebook.orca;FBLC/en_US;FBBV/170889108;FBCR/Verizon;FBMF/samsung;FBBD/samsung;FBDV/SM-J250F;FBSV/7.1.1;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.25,height=1024,width=2048};]"
+    ua = a+b
     return ua
